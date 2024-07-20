@@ -1,14 +1,18 @@
 ---
-- host: all
+- name: install qemu guest agent on vm
+  host: all
   gather_facts: false
   become: yes
 
   tasks:
     - name: update apt cache
       command: apt update 
+
     - name: install quemu guest agent
       command: apt -y install qemu-guest-agent
+
     - name: enable agent
       command: systemctl enable qemu-guest-agent
+      
     - name: start agent
       command: systemctl start qemu-guest-agent
