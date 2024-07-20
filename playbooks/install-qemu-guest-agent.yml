@@ -1,4 +1,3 @@
----
 - name: install qemu guest agent on vm
   host: all
   gather_facts: false
