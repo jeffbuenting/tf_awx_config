@@ -1,6 +1,9 @@
 - name: install qemu guest agent on vm
   hosts: all
   tasks:
+    - name: update apt cache
+      command: apt update 
+  
    - name: Ping my hosts
      ansible.builtin.ping:
 
