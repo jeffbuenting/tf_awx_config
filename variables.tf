@@ -14,7 +14,6 @@ variable "awx_user" {
 variable "awx_user_password" {
   description = "awx user password"
   type        = string
-  default     = "Branman1!"
 }
 
 variable "awx_git_url" {
@@ -22,3 +21,16 @@ variable "awx_git_url" {
   type        = string
   default     = "https://github.com/jeffbuenting/tf_awx_config.git"
 }
+
+variable "ubuntu_admin_user" {
+  description = "Ubuntu Admin Password"
+  type        = string
+  default     = "ubuntu"
+}
+
+variable "ubuntu_admin_user_password" {
+  description = "admin user password"
+  type        = string
+}
+
+# AWX users

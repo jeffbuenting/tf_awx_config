@@ -12,3 +12,4 @@ provider "awx" {
   username = var.awx_user
   password = var.awx_user_password
 }
+
